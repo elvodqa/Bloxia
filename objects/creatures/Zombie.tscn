@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/creatures/zombie_front_idle.png" type="Texture" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.0394743, 0.0790353, 0.00335519 )
+
+[node name="Zombie" type="KinematicBody"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+shape = SubResource( 1 )
