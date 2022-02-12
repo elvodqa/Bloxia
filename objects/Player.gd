@@ -4,7 +4,7 @@ onready var player = $Human
 onready var camera = $Camera
 onready var anim = $AnimationPlayer
 
-var gravity =  Vector3.ZERO  # strength of gravity
+var gravity =  Vector3.DOWN * 1  # strength of gravity
 var speed = 3  # movement speed
 var jump_speed = 6  # jump strength
 var spin = 0.1  # rotation speed
@@ -13,6 +13,7 @@ var velocity = Vector3.ZERO
 var jump = false
 
 enum STATE {IDLE, WALKING}
+
 var current_state = STATE.IDLE
 
 var camera_pos = Vector3(0, 0.3, 5)
