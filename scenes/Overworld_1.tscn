@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://assets/tilesets/OutsideTileMesh.tres" type="MeshLibrary" id=1]
 [ext_resource path="res://objects/Player.tscn" type="PackedScene" id=2]
+
+[sub_resource type="Theme" id=1]
 
 [node name="World" type="Spatial"]
 
@@ -17,4 +19,12 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 8, 0, 0, 0, 8, 0, 0, 0, 1, 0, 1.55196, 0 )
+transform = Transform( 8, 0, 0, 0, 8, 0, 0, 0, 1, 0, 1.19418, 0 )
+
+[node name="FPS_TEXT" type="RichTextLabel" parent="."]
+margin_right = 145.0
+margin_bottom = 38.0
+theme = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
